@@ -1,32 +1,36 @@
 token_open_weather_api = '066bdda4bf6b0e5d4d2980b47a95119d'
 
-
 import requests
 import datetime
 import locale
-from PIL import Image, ImageDraw, ImageFont
+from PIL import (Image,
+                 ImageDraw,
+                 ImageFont)
 
 locale.setlocale(locale.LC_ALL, 'Russian_Russia.1251')
-#locale.setlocale(locale.LC_ALL, 'ru_RU.utf8')
+# locale.setlocale(locale.LC_ALL, 'ru_RU.utf8')
 
 print('Введите город: ')
-#city = input()
-city = 'Новосибирск'
+# city = input()
+city = 'Novosibirsk'
 
 print('Какой срок: "Сегодня", "Завтра", "Неделя" или "2 недели"')
-#days = input()
+# days = input()
 days = '2 недели'
 
-temp_address = str('http://api.openweathermap.org/data/2.5/forecast/daily?q=' +  city + '&cnt=' + str(14) + '&appid=066bdda4bf6b0e5d4d2980b47a95119d')
+temp_address = str('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&cnt=' + str(
+    14) + '&appid=066bdda4bf6b0e5d4d2980b47a95119d')
+print(temp_address)
+# print('address: ', temp_address, '\n\n')
 
-#print('address: ', temp_address, '\n\n')
-
-response = requests.get(temp_address)
+proxies = {'http': 'http://st_nik:ubgjnfkfvec123@ci.nsu.ru:3128/'}
+response = requests.get(temp_address, proxies = proxies)
 
 j = response.json()
-#print(j)
-#print('\n\n\n')
+# print(j)
+# print('\n\n\n')
 n = 0
+
 
 def weather_all(n):
     img = Image.new("RGB", (400, 500), (0, 0, 0))
@@ -34,7 +38,6 @@ def weather_all(n):
     font = ImageFont.truetype("arial.ttf", 20)
     x = 10
     y = 10
-
 
     udate = j['list'][n]['dt']
     date = datetime.datetime.fromtimestamp(int(udate)).strftime('%d.%m.%Y - %A')
@@ -54,7 +57,6 @@ def weather_all(n):
 
     weather = j['list'][n]["weather"][0]["description"]
 
-
     temp_min = str(int(float(temp_min) - 273.15)) + chr(176) + 'C'
     temp_max = str(int(float(temp_max) - 273.15)) + chr(176) + 'C'
     temp_morn = str(int(float(temp_morn) - 273.15)) + chr(176) + 'C'
@@ -71,8 +73,7 @@ def weather_all(n):
 
     weather = weather_lang_Russian(weather)
 
-
-    slovar = {"Город: ":city,
+    slovar = {"Город: ": city,
               "Дата: ": date,
               "Утро: ": temp_morn,
               "День: ": temp_day,
@@ -87,9 +88,9 @@ def weather_all(n):
               }
 
     for key, value in slovar.items():
-        #print(key, value)
+        # print(key, value)
         format_file = str(date) + '.png'
-        draw.text((x, y), str(key + value), fill="white", font=font)
+        draw.text((x, y), str(key + value), fill = "white", font = font)
         img.save(format_file, "PNG")
 
         y += 40
@@ -110,39 +111,40 @@ def weather_all(n):
     # print("Облачность: ", temp_clouds)
     # print("----------------------\n\n")
 
+
 def weather_lang_Russian(weather_lang):
-    if(weather_lang == 'sky is clear'):
+    if (weather_lang == 'sky is clear'):
         temp_weather = 'Небо чистое'
         return temp_weather
-    elif(weather_lang == 'light rain'):
+    elif (weather_lang == 'light rain'):
         temp_weather = 'Лёгкий дождь'
         return temp_weather
-    elif(weather_lang == 'moderate rain'):
-        temp_weather= 'Умеренный дождь'
+    elif (weather_lang == 'moderate rain'):
+        temp_weather = 'Умеренный дождь'
         return temp_weather
     elif (weather_lang == 'heavy intensity rain'):
         temp_weather = 'Сильный дождь'
         return temp_weather
-    elif(weather_lang == 'few clouds'):
+    elif (weather_lang == 'few clouds'):
         temp_weather = 'Малая облачность'
         return temp_weather
-    elif(weather_lang == 'light snow'):
+    elif (weather_lang == 'light snow'):
         temp_weather = 'Лёгкий снег'
         return temp_weather
-    elif(weather_lang == 'snow'):
+    elif (weather_lang == 'snow'):
         temp_weather = 'Снег'
         return temp_weather
 
-    elif(weather_lang == 'broken clouds'):
+    elif (weather_lang == 'broken clouds'):
         temp_weather = 'Местами облачно'
         return temp_weather
-    elif(weather_lang == 'overcast clouds'):
+    elif (weather_lang == 'overcast clouds'):
         temp_weather = 'Пасмурно'
         return temp_weather
-    elif(weather_lang == 'scattered clouds'):
+    elif (weather_lang == 'scattered clouds'):
         temp_weather = 'Перестые облака'
         return temp_weather
-    elif(weather_lang == 'scattered clouds'):
+    elif (weather_lang == 'scattered clouds'):
         temp_weather = 'Перестые облака'
         return temp_weather
 
@@ -151,29 +153,29 @@ def weather_lang_Russian(weather_lang):
 
 
 def wind_direction_conversion(wind):
-    if(wind <= 10) or (wind >= 350):
+    if (wind <= 10) or (wind >= 350):
         temp_wind_direction = 'Северный'
         return temp_wind_direction
-    elif((wind >= 80) and (wind <=100)):
+    elif ((wind >= 80) and (wind <= 100)):
         temp_wind_direction = 'Восточный'
         return temp_wind_direction
-    elif((wind >= 170) and (wind <=190)):
+    elif ((wind >= 170) and (wind <= 190)):
         temp_wind_direction = 'Южный'
         return temp_wind_direction
-    elif((wind >= 260) and (wind <=280)):
+    elif ((wind >= 260) and (wind <= 280)):
         temp_wind_direction = 'Западный'
         return temp_wind_direction
 
-    elif((wind > 10) and (wind < 80)):
+    elif ((wind > 10) and (wind < 80)):
         temp_wind_direction = 'Северо-восточный'
         return temp_wind_direction
-    elif((wind > 100) and (wind < 170)):
+    elif ((wind > 100) and (wind < 170)):
         temp_wind_direction = 'Юго-восточный'
         return temp_wind_direction
-    elif((wind > 190) and (wind < 260)):
+    elif ((wind > 190) and (wind < 260)):
         temp_wind_direction = 'Юго-западный'
         return temp_wind_direction
-    elif((wind > 280) and (wind < 350)):
+    elif ((wind > 280) and (wind < 350)):
         temp_wind_direction = 'Северо-западный'
         return temp_wind_direction
 
@@ -192,7 +194,7 @@ elif days == '2 недели':
         weather_all(n)
         n = n + 1
 
-elif days=='Завтра'.lower():
+elif days == 'Завтра'.lower():
     weather_all(1)
 
 elif days == 'Сегодня'.lower():
