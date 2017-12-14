@@ -1,13 +1,13 @@
 def insert(sql):
-    import MySQLdb
+    import pymysql
     import constant
 
-    conn = MySQLdb.connect(host=constant.host,
-                           user=constant.user,
-                           passwd=constant.passwd,
-                           db=constant.db,
-                           charset=constant.charset,
-                           init_command=constant.init_command
+    conn = pymysql.connect(host = constant.host,
+                           user = constant.user,
+                           passwd = constant.passwd,
+                           db = constant.db,
+                           charset = constant.charset,
+                           init_command = constant.init_command
                            )
     cursor = conn.cursor()
 
@@ -18,4 +18,3 @@ def insert(sql):
         conn.rollback()
 
     conn.close()
-
