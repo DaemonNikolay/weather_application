@@ -2,27 +2,11 @@ import requests
 import datetime
 import locale
 import constant
+import time
 
-token_open_weather_api = constant.token_open_weather_api
 
-locale.setlocale(locale.LC_ALL, 'Russian_Russia.1251')
-# locale.setlocale(locale.LC_ALL, 'ru_RU.utf8')
-
-print('Введите город: ')
-# city = 'Новосибирск'
-city = 'Novosibirsk'
-
-print('Какой срок: "Сегодня", "Завтра", "Неделя" или "2 недели"')
-days = '2 недели'.lower()
-
-temp_address = str('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&cnt=' + str(
-    14) + '&appid=066bdda4bf6b0e5d4d2980b47a95119d')
-
-response = requests.get(temp_address)
-
-j = response.json()
-n = 0
-
+def sleep():
+    time.sleep(86400)
 
 def insert(date, day, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure, direction_wind,
            speed_wind, cloud):
@@ -35,7 +19,6 @@ def insert(date, day, t_morning, t_afternoon, t_evening, t_night, precipitation,
         date, day, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure, direction_wind, speed_wind, cloud)
 
     insert_to_db.insert(sql = sql_insert)
-
 
 def weather_all(n):
     x = 10
@@ -114,7 +97,6 @@ def weather_all(n):
     # print("Облачность: ", type(temp_clouds))
     # print("----------------------\n\n")
 
-
 def weather_lang_Russian(weather_lang):
     if (weather_lang == 'sky is clear'):
         temp_weather = 'Небо чистое'
@@ -154,7 +136,6 @@ def weather_lang_Russian(weather_lang):
     else:
         return weather_lang
 
-
 def wind_direction_conversion(wind):
     if (wind <= 10) or (wind >= 350):
         temp_wind_direction = 'Северный'
@@ -187,20 +168,47 @@ def wind_direction_conversion(wind):
         return temp_wind_direction
 
 
-if days == "Неделя".lower():
-    while n < 7:
-        weather_all(n)
-        n = n + 1
+while True:
 
-elif days == '2 недели':
-    while n < 14:
-        weather_all(n)
-        n = n + 1
+    token_open_weather_api = constant.token_open_weather_api
 
-elif days == 'Завтра'.lower():
-    weather_all(1)
+    # locale.setlocale(locale.LC_ALL, 'Russian_Russia.1251')
+    locale.setlocale(locale.LC_ALL, 'ru_RU.utf8')
 
-elif days == 'Сегодня'.lower():
-    weather_all(0)
+    print('Введите город: ')
+    # city = 'Новосибирск'
+    city = 'Novosibirsk'
 
-print("Расчёт завершён!")
+    print('Какой срок: "Сегодня", "Завтра", "Неделя" или "2 недели"')
+    days = '2 недели'.lower()
+
+    temp_address = str('http://api.openweathermap.org/data/2.5/forecast/daily?q=' + city + '&cnt=' + str(
+        14) + '&appid=066bdda4bf6b0e5d4d2980b47a95119d')
+
+    response = requests.get(temp_address)
+
+    j = response.json()
+    n = 0
+
+    response.close()
+
+
+    if days == "Неделя".lower():
+        while n < 7:
+            weather_all(n)
+            n = n + 1
+
+    elif days == '2 недели':
+        while n < 14:
+            weather_all(n)
+            n = n + 1
+
+    elif days == 'Завтра'.lower():
+        weather_all(1)
+
+    elif days == 'Сегодня'.lower():
+        weather_all(0)
+
+    print("Расчёт завершён!")
+
+    sleep()
