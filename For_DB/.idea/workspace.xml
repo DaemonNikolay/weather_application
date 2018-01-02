@@ -38,11 +38,11 @@
       <file leaf-file-name="insert_to_db.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/insert_to_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
-              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="586">
+              <caret line="35" column="207" lean-forward="false" selection-start-line="35" selection-start-column="207" selection-end-line="35" selection-end-column="207" />
               <folding>
-                <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-                <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+                <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+                <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
               </folding>
             </state>
           </provider>
@@ -87,7 +87,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1088" />
@@ -164,7 +164,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="952" y="0" width="976" height="1088" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -221,8 +221,8 @@
         <state relative-caret-position="189">
           <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -257,8 +257,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -293,8 +293,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -329,8 +329,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -373,8 +373,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -401,8 +401,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -442,11 +442,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insert_to_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="586">
+          <caret line="35" column="207" lean-forward="false" selection-start-line="35" selection-start-column="207" selection-end-line="35" selection-end-column="207" />
           <folding>
-            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
+            <marker date="1514921872769" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921872769" expanded="true" signature="1447:1658" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
