@@ -38,11 +38,11 @@
       <file leaf-file-name="insert_to_db.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/insert_to_db.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="22" column="203" lean-forward="false" selection-start-line="22" selection-start-column="203" selection-end-line="22" selection-end-column="203" />
+            <state relative-caret-position="609">
+              <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
               <folding>
-                <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-                <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+                <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+                <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
               </folding>
             </state>
           </provider>
@@ -221,8 +221,8 @@
         <state relative-caret-position="189">
           <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -257,8 +257,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="16" lean-forward="true" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -293,8 +293,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -329,8 +329,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -373,8 +373,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -401,8 +401,8 @@
         <state relative-caret-position="294">
           <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
@@ -442,11 +442,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/insert_to_db.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="203" lean-forward="false" selection-start-line="22" selection-start-column="203" selection-end-line="22" selection-end-column="203" />
+        <state relative-caret-position="609">
+          <caret line="29" column="29" lean-forward="true" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
-            <marker date="1514921311530" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
-            <marker date="1514921311530" expanded="true" signature="1083:1290" ph="UPDATE NOVOS... " />
+            <marker date="1514921421953" expanded="true" signature="595:852" ph="INSERT INTO NOVOSIBIRSK... " />
+            <marker date="1514921421953" expanded="true" signature="1425:1632" ph="UPDATE NOVOS... " />
           </folding>
         </state>
       </provider>
