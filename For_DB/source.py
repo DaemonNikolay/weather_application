@@ -8,17 +8,21 @@ import time
 def sleep():
     time.sleep(86400)
 
+
 def insert(date, day, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure, direction_wind,
            speed_wind, cloud):
     import insert_to_db
 
     # sql1 = """UPDATE `NOVOSIBIRSK` SET `Date`="22-01-2017",`Day`="среда",`t_Morning`=10,`t_Afternoon`=15,`t_Evening`=20,`t_Night`=25,`Precipitation`="снег",`Himidity`=90,`Pressure`=17,`Direction_wind`="восток",`Speed_wind`=44,`Cloud`=55 WHERE 1"""
 
-    sql_insert = """INSERT INTO NOVOSIBIRSK (`Date`, `day`, `t_Morning`,`t_Afternoon`,  `t_Evening`, `t_Night`, `Precipitation`,`Himidity`, `Pressure`, `Direction_wind`, `Speed_wind`, `Cloud` )
-                    VALUES ('%s', '%s', %d, %d, %d, %d, '%s', %d, %d, '%s', %f, %d)""" % (
-        date, day, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure, direction_wind, speed_wind, cloud)
+    # sql_insert = """INSERT INTO NOVOSIBIRSK (`Date`, `day`, `t_Morning`,`t_Afternoon`,  `t_Evening`, `t_Night`, `Precipitation`,`Himidity`, `Pressure`, `Direction_wind`, `Speed_wind`, `Cloud` )
+    #                 VALUES ('%s', '%s', %d, %d, %d, %d, '%s', %d, %d, '%s', %f, %d)""" % (
+    #     date, day, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure, direction_wind,
+    #     speed_wind, cloud)
 
-    insert_to_db.insert(sql = sql_insert)
+    insert_to_db.insert(date, day, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure,
+                        direction_wind, speed_wind, cloud)
+
 
 def weather_all(n):
     x = 10
@@ -97,6 +101,7 @@ def weather_all(n):
     # print("Облачность: ", type(temp_clouds))
     # print("----------------------\n\n")
 
+
 def weather_lang_Russian(weather_lang):
     if (weather_lang == 'sky is clear'):
         temp_weather = 'Небо чистое'
@@ -135,6 +140,7 @@ def weather_lang_Russian(weather_lang):
 
     else:
         return weather_lang
+
 
 def wind_direction_conversion(wind):
     if (wind <= 10) or (wind >= 350):
@@ -177,7 +183,7 @@ while True:
 
     print('Введите город: ')
     # city = 'Новосибирск'
-    city = 'Novosibirsk'
+    city = 'Новосибирск'
 
     print('Какой срок: "Сегодня", "Завтра", "Неделя" или "2 недели"')
     days = '2 недели'.lower()
@@ -191,7 +197,6 @@ while True:
     n = 0
 
     response.close()
-
 
     if days == "Неделя".lower():
         while n < 7:
