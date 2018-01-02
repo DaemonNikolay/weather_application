@@ -34,10 +34,10 @@ def insert(date, day, t_morning, t_afternoon, t_evening, t_night, precipitation,
 
         cursor.execute(
             """UPDATE NOVOSIBIRSK SET `t_Morning`=%d,`t_Afternoon`=%d,  `t_Evening`=%d, `t_Night`=%d, `Precipitation`='%s',`Himidity`=%d, `Pressure`='%s', `Direction_wind`='%s', `Speed_wind`=%f, `Cloud`='%s'  WHERE `Date`='%s'""" % (
-                date, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure,
+                t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure,
                 direction_wind,
                 speed_wind,
-                cloud))
+                cloud, date))
         conn.commit()
 
     conn.close()
