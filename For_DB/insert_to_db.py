@@ -20,7 +20,7 @@ def insert(date, day, t_morning, t_afternoon, t_evening, t_night, precipitation,
         conn.commit()
     except:
         cursor.execute(
-            """UPDATE NOVOSIBIRSK SET `t_Morning`=%d,`t_Afternoon`=%d,  `t_Evening`=%d, `t_Night`=%d, `Precipitation`='%s',`Himidity`=%d, `Pressure`=%d, `Direction_wind`='%s', `Speed_wind`=%f, `Cloud`=%d  WHERE `Date`='%s'""" % (
+            """UPDATE NOVOSIBIRSK SET `t_Morning`=%s,`t_Afternoon`=%s,  `t_Evening`=%s, `t_Night`=%s, `Precipitation`='%s',`Himidity`=%s, `Pressure`=%s, `Direction_wind`='%s', `Speed_wind`=%f, `Cloud`=%s  WHERE `Date`='%s'""" % (
                 date, t_morning, t_afternoon, t_evening, t_night, precipitation, himidity, pressure,
                 direction_wind,
                 speed_wind,
