@@ -178,8 +178,8 @@ while True:
 
     token_open_weather_api = constant.token_open_weather_api
 
-    locale.setlocale(locale.LC_ALL, 'Russian_Russia.1251')
-    # locale.setlocale(locale.LC_ALL, 'ru_RU.utf8')
+    # locale.setlocale(locale.LC_ALL, 'Russian_Russia.1251')
+    locale.setlocale(locale.LC_ALL, 'ru_RU.utf8')
 
     print('Введите город: ')
     # city = 'Новосибирск'

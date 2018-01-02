@@ -1,6 +1,6 @@
 host = "localhost"
 user = "root"
-passwd = ""
+passwd = "1"
 db = "weather"
 charset = "utf8"
 init_command = 'SET NAMES UTF8'
